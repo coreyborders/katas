@@ -12,5 +12,15 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    testCompile("junit", "junit", "4.12")
+    testImplementation(kotlin("test-junit5"))
+
+    testImplementation("org.mockito.kotlin:mockito-kotlin:2.2.11")
+}
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions.jvmTarget = "11"
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
 }
