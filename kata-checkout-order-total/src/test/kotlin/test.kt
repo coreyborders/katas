@@ -11,5 +11,11 @@ class test {
         assertEquals(actual, expected)
     }
 
+    @Test
+    fun scannedSoupHasADifferentPriceThanGum() {
+        val actual = scanner.acceptItem("gum")
+        val expected = 0.99
+        assertEquals(actual, expected)
+    }
 }
 

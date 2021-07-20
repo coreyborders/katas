@@ -1,2 +1,2 @@
-rootProject.name = "babysitter_kata_kotlin"
+rootProject.name = "checkout-order-total-kata"
 
